@@ -9,8 +9,13 @@ The directions for macOS/Linux and Windows users are slightly different. Directi
 ## For macOS and Linux
 
 ### Elasticsearch ###
-1. Click on [Elasticsearch](https://www.elastic.co/downloads/elasticsearch) download link. 
-2. You will see 
+**Step 1: Download Elasticsearch**
+
+Go to [Elasticsearch](https://www.elastic.co/downloads/elasticsearch)download link.
+
+Select the download option for your operating system (orange or green boxes).
+![Download ES](https://user-images.githubusercontent.com/60980933/99734881-d43ed480-2a80-11eb-807b-fa78198c94a1.jpg)
+
 
 ### Kibana ###
 
