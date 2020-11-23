@@ -54,7 +54,8 @@ ls
 Change into the unzipped Elasticsearch directory.
 ```
 # In the terminal
-#The name of your unzipped Elasticsearch may differ from what is shown below. Make sure you cd into the right Elasticsearch directory. 
+# A new version of Elasticsearch may have been released by the time you download Elasticsearch. Therefore, the version of your download may differ from what is shown below(7.10.0). Please make sure you cd into the Elasticsearch directory shown when using the ls command from the previous step.  
+
 cd elasticsearch-7.10.0
 ```
 You will see that you are now in the elasticsearch directory(orange box).
@@ -62,7 +63,7 @@ You will see that you are now in the elasticsearch directory(orange box).
 
 In the terminal, run the following command. 
 ```javascript
-#In the terminal
+# In the terminal
 bin/elasticsearch
 ```
 You will see the cursor blinking for a while before you see Elasticsearch server running!
@@ -71,7 +72,9 @@ You will see the cursor blinking for a while before you see Elasticsearch server
 If you scroll down, you will see that Elasticsearch server is running on localhost at port 9200(orange box). 
 ![port 9200](https://user-images.githubusercontent.com/60980933/99984819-c633d100-2d6a-11eb-93d4-61dc0a2502b8.jpg)
 
-A REST API is used to send a request to Elasticsearch server and the request is sent to the endpoint http://localhost:9200.
+**Step 4: Send a cURL command to Elasticsearch server to make sure that Elasticsearch is up and running**
+
+A REST API is used to send a request to the Elasticsearch server. The request is sent to the endpoint http://localhost:9200.
 
 We will use cURL command line tool to check whether the request is received by Elasticsearch server.
 
@@ -79,7 +82,7 @@ Open up a NEW terminal.
 
 In the home directory of the new terminal, run the following command. 
 ```javascript
-#In new terminal
+# In the new terminal
 curl http://localhost:9200
 ```
 ![curl command](https://user-images.githubusercontent.com/60980933/99986285-37c04f00-2d6c-11eb-9c05-0e48f2604630.jpg)
