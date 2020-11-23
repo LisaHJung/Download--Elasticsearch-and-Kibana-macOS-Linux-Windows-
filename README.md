@@ -1,10 +1,15 @@
 # Downloading Elasticsearch and Kibana
 
-We will be using the following links to download Elasticsearch and Kibana.
+The Elastic Stack - Elasticsearch, Kibana, Beats, and Logstash - is free and open. 
+
+The following links takes you to the download pages for Elasticsearch and Kibana.
 * [Elasticsearch](https://www.elastic.co/downloads/elasticsearch)
 * [Kibana](https://www.elastic.co/downloads/kibana?S_TACT=)
 
-The directions for macOS/Linux and Windows users are slightly different. Directions for both operatings systems are shown below. 
+The directions for macOS/Linux and Windows are slightly different. Directions for both operatings systems are shown below. 
+- [macOS and Linux](#for-macOS-and-linux)
+- [Windows](#for-windows)
+
 
 ## For macOS and Linux
 
