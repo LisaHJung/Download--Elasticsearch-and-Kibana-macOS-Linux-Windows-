@@ -2,14 +2,13 @@
 
 The Elastic Stack - Elasticsearch, Kibana, Beats, and Logstash - is free and open. 
 
-The following links takes you to the download pages for Elasticsearch and Kibana.
+The following links will take you to the download pages for Elasticsearch and Kibana.
 * [Elasticsearch](https://www.elastic.co/downloads/elasticsearch)
 * [Kibana](https://www.elastic.co/downloads/kibana?S_TACT=)
 
 The directions for macOS/Linux and Windows are slightly different. Directions for both operatings systems are shown below. 
 - [macOS and Linux](#for-macOS-and-linux)
 - [Windows](#for-windows)
-
 
 ## For macOS and Linux
 
@@ -18,8 +17,42 @@ The directions for macOS/Linux and Windows are slightly different. Directions fo
 
 Go to [Elasticsearch](https://www.elastic.co/downloads/elasticsearch)download link.
 
-Select the download option for your operating system (orange or green boxes).
+Select the download option for your operating system (green box).
 ![Download ES](https://user-images.githubusercontent.com/60980933/99734881-d43ed480-2a80-11eb-807b-fa78198c94a1.jpg)
+
+**Step 2: Relocate the downloaded Elasticsearch and extract it**
+Where you relocate Elasticsearch is up to you but for this tutorial, I have moved it to the desktop. 
+
+Once Elasticsearch is downloaded(orange box), control-click on Elasticsearch and click on show in folder. 
+![Relocate the file](https://user-images.githubusercontent.com/60980933/99977274-a8ae3980-2d61-11eb-91c7-4210ef2b9acb.jpg)
+
+Select the downloaded Elasticsearch(orange box) and move it to the desktop(green box). 
+![Move to download](https://user-images.githubusercontent.com/60980933/99977759-4bff4e80-2d62-11eb-99ee-f65037032cbf.jpg)
+
+Go to the desktop and unzip Elasticsearch by double clicking on it(orange box). 
+![Unzip the file](https://user-images.githubusercontent.com/60980933/99979472-5d495a80-2d64-11eb-8e2d-0af00252e7f3.jpg)
+
+**Step 3: Start the Elasticsearch server and ensure that everything is working properly**
+Open up the terminal of choice. From your home directory, copy and paste the following command into your terminal to get to the Desktop. 
+```
+# in the terminal of your choice
+cd Desktop
+```
+Run the `ls` command in your terminal to look up the name of unzipped Elasticsearch folder(orange box). 
+```
+# in the terminal of your choice
+ls
+```
+![Find ES on Desktop (1)](https://user-images.githubusercontent.com/60980933/99981789-1315a880-2d67-11eb-8a25-d80294e9eccc.jpg)
+
+Change into the unzipped Elasticsearch directory.
+```
+# in the terminal of your choice 
+#The name of your unzipped elasticsearch folder may differ from what is shown below. 
+cd elasticsearch-7.10.0
+```
+You will see that you are now in the elasticsearch directory(orange box).
+![CD into elasticsearch](https://user-images.githubusercontent.com/60980933/99982686-1e1d0880-2d68-11eb-908c-284f4c9e9eb5.jpg)
 
 
 ### Kibana ###
