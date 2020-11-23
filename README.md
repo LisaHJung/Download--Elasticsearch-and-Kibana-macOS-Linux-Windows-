@@ -172,15 +172,15 @@ You will see the following displayed on the browser.
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/hhutzyk8cxzvk3qi71ta.png)
 
-**If Kibana does not load on your browser**
+**If Kibana does not load on your browser...**
 ```
 If you are having trouble getting Kibana to load, try restarting your Elasticsearch server. 
 Go to the terminal used for your Elasticserach server. 
-Press `control + c`. Then, run bin/elasticsearch in the same terminal. 
+Press **control + c**. Then, run **bin/elasticsearch** in the same terminal. 
 
 Go back to your terminal that is running Kibana. 
-Run `control + c` in the command prompt terminal. 
-Then, run bin/kibana in the terminal. Go to http://localhost:5601 on your browser. 
+Run **control + c** in the command prompt terminal. 
+Then, run **bin/kibana** in the terminal. Go to **http://localhost:5601** on your browser. 
 ```
 All right let's get back to the Kibana browser.
 
