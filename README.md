@@ -1,4 +1,4 @@
-# Downloading Elasticsearch and Kibana
+# Downloading Elasticsearch and Kibana(macOS/Linux and Windows)
 
 Elasticsearch and Kibana are **free and open**! 
 
