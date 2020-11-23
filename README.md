@@ -17,9 +17,10 @@ The directions for macOS/Linux and Windows are slightly different. Directions fo
 ### Elasticsearch ###
 **Step 1: Download Elasticsearch**
 
-Go to [Elasticsearch](https://www.elastic.co/downloads/elasticsearch) download link.
+Go to the [Elasticsearch](https://www.elastic.co/downloads/elasticsearch) download link.
 
 Select the download option for your operating system(green box).
+
 ![Download ES](https://user-images.githubusercontent.com/60980933/99734881-d43ed480-2a80-11eb-807b-fa78198c94a1.jpg)
 
 **Step 2: Relocate the downloaded Elasticsearch and extract it**
@@ -27,19 +28,22 @@ Select the download option for your operating system(green box).
 Where you relocate Elasticsearch is up to you but for this tutorial, I am moving it to the desktop. 
 
 Once Elasticsearch is downloaded(orange box), control-click on `Elasticsearch` and click on `show in folder`. 
+
 ![Relocate the file](https://user-images.githubusercontent.com/60980933/99977274-a8ae3980-2d61-11eb-91c7-4210ef2b9acb.jpg)
 
-Select the downloaded Elasticsearch(orange box) and move it to the desktop(green box). 
+Select Elasticsearch(orange box) and move it to the desktop(green box). 
+
 ![Move to download](https://user-images.githubusercontent.com/60980933/99977759-4bff4e80-2d62-11eb-99ee-f65037032cbf.jpg)
 
 Go to the desktop and unzip Elasticsearch by double clicking on it(orange box). Once Elasticsearch is unzipped, you will see a blue folder named Elasticsearch on your desktop. 
+
 ![Unzip the file](https://user-images.githubusercontent.com/60980933/99979472-5d495a80-2d64-11eb-8e2d-0af00252e7f3.jpg)
 
 **Step 3: Start the Elasticsearch server and ensure that everything is working properly**
 
 By using the command line, we will locate the unzipped Elasticsearch folder in the desktop and run the Elasticsearch server!
 
-Open up a terminal of choice. From your home directory, copy and paste the following command into your terminal to get to the Desktop. 
+Open up a terminal of your choice. From your home directory, copy and paste the following command into your terminal to get to the Desktop. 
 ```
 # In the terminal of your choice 
 cd Desktop
@@ -51,7 +55,7 @@ ls
 ```
 ![Find ES on Desktop (2)](https://user-images.githubusercontent.com/60980933/99988145-8838ac00-2d6e-11eb-98f1-7c3b34fc82a0.jpg)
 
-Change into the unzipped Elasticsearch directory.
+Change into the unzipped Elasticsearch directory by running the following command. 
 ```
 # In the terminal
 # A new version of Elasticsearch may have been released by the time you download Elasticsearch. 
@@ -61,6 +65,7 @@ Change into the unzipped Elasticsearch directory.
 cd elasticsearch-7.10.0
 ```
 You will see that you are now in the elasticsearch directory(orange box).
+
 ![CD into elasticsearch](https://user-images.githubusercontent.com/60980933/99982686-1e1d0880-2d68-11eb-908c-284f4c9e9eb5.jpg)
 
 In the terminal, run the following command. 
@@ -75,7 +80,7 @@ You will see the cursor blinking for a while before Elasticsearch server starts 
 
 A REST API is used to send requests to the Elasticsearch server. These requests are sent to the endpoint http://localhost:9200.
 
-We will use cURL command line tool to check whether the request is received by Elasticsearch server.
+We will use a cURL command to check whether the request is received by Elasticsearch server.
 
 Open up a NEW terminal. 
 
@@ -86,7 +91,7 @@ curl http://localhost:9200
 ```
 ![curl command](https://user-images.githubusercontent.com/60980933/99986285-37c04f00-2d6c-11eb-9c05-0e48f2604630.jpg)
 
-When you run the command(orange box), you will see the following JSON object displayed in your terminal(green box). That means everything is working correctly and Elasticsearch has been successfully installed. 
+When you run the command(orange box), you will see the following JSON object displayed in your terminal(green box). If you see this JSON object, that means everything is working correctly and Elasticsearch has been successfully installed. 
 
 Leave these two terminals open to keep the Elasticsearch server running. 
 
@@ -105,7 +110,7 @@ In the region highlighted with a red box, select the download option for your op
 
 You will see that a zip file has been downloaded. 
 
-**Step 2: Relocate the downloaded file and extract the file**
+**Step 2: Relocate the downloaded Kibana and extract it**
 
 Where you relocate Kibana is up to you but for this tutorial, I am moving it to the desktop. 
 
@@ -141,9 +146,11 @@ Change into the unzipped Kibana directory.
 # By the time you download Kibana, a new version of Kibana may have been released. 
 # Therefore, the version of your download may differ from what is shown below(7.10.0-darwin-x86_64). 
 # Please make sure you cd into the Kibana directory shown when using the ls command from the previous step.  
+
 cd kibana-7.10.0-darwin-x86_64
 ```
 You will see that you are now in the Kibana directory(orange box).
+
 ![Kibana directory](https://user-images.githubusercontent.com/60980933/100003785-dc01c000-2d83-11eb-9077-47438e7fc195.jpg)
 
 In the terminal, run the following command. 
@@ -152,6 +159,7 @@ In the terminal, run the following command.
 bin/kibana 
 ```
 You will see the cursor blinking for a while before you see Kibana running!
+
 ![Kibana running](https://user-images.githubusercontent.com/60980933/100004159-57fc0800-2d84-11eb-98c4-5c1c5f807015.jpg)
 
 When you see the following message that the `Server is running at http://localhost:5601` in your terminal, you are ready to work with the Kibana interface. 
@@ -166,9 +174,13 @@ You will see the following displayed on the browser.
 
 **If Kibana does not load on your browser**
 ```
-If you are having trouble getting Kibana to load, try restarting your Elasticsearch server. Go to the terminal used for your Elasticserach server. Press `control + c`. Then, run bin/elasticsearch in the same terminal. 
+If you are having trouble getting Kibana to load, try restarting your Elasticsearch server. 
+Go to the terminal used for your Elasticserach server. 
+Press `control + c`. Then, run bin/elasticsearch in the same terminal. 
 
-Go back to your terminal that is running Kibana. Run `control + c` in the command prompt terminal. Then, run bin/kibana in the terminal. Go to http://localhost:5601 on your browser. 
+Go back to your terminal that is running Kibana. 
+Run `control + c` in the command prompt terminal. 
+Then, run bin/kibana in the terminal. Go to http://localhost:5601 on your browser. 
 ```
 All right let's get back to the Kibana browser.
 
