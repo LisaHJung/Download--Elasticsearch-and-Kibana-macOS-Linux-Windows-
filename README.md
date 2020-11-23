@@ -1,6 +1,6 @@
 # Downloading Elasticsearch and Kibana
 
-The Elastic Stack - Elasticsearch, Kibana, Beats, and Logstash - is free and open. 
+The Elastic Stack which consists of Elasticsearch, Kibana, Beats, and Logstash is **free and open**. 
 
 The following links will take you to the download pages for Elasticsearch and Kibana.
 * [Elasticsearch](https://www.elastic.co/downloads/elasticsearch)
@@ -17,10 +17,11 @@ The directions for macOS/Linux and Windows are slightly different. Directions fo
 
 Go to [Elasticsearch](https://www.elastic.co/downloads/elasticsearch)download link.
 
-Select the download option for your operating system (green box).
+Select the download option for your operating system(green box).
 ![Download ES](https://user-images.githubusercontent.com/60980933/99734881-d43ed480-2a80-11eb-807b-fa78198c94a1.jpg)
 
 **Step 2: Relocate the downloaded Elasticsearch and extract it**
+
 Where you relocate Elasticsearch is up to you but for this tutorial, I have moved it to the desktop. 
 
 Once Elasticsearch is downloaded(orange box), control-click on Elasticsearch and click on show in folder. 
@@ -33,27 +34,57 @@ Go to the desktop and unzip Elasticsearch by double clicking on it(orange box).
 ![Unzip the file](https://user-images.githubusercontent.com/60980933/99979472-5d495a80-2d64-11eb-8e2d-0af00252e7f3.jpg)
 
 **Step 3: Start the Elasticsearch server and ensure that everything is working properly**
+
+By using the command line, we will locate the unzipped Elasticsearch folder in the desktop and run the Elasticsearch server!
+
 Open up the terminal of choice. From your home directory, copy and paste the following command into your terminal to get to the Desktop. 
 ```
-# in the terminal of your choice
+# In the terminal of your choice 
 cd Desktop
 ```
-Run the `ls` command in your terminal to look up the name of unzipped Elasticsearch folder(orange box). 
+Run the `ls` command in your terminal to look up the name of unzipped Elasticsearch folder(orange box) located in your Desktop. 
 ```
-# in the terminal of your choice
+# In the terminal
 ls
 ```
 ![Find ES on Desktop (1)](https://user-images.githubusercontent.com/60980933/99981789-1315a880-2d67-11eb-8a25-d80294e9eccc.jpg)
 
 Change into the unzipped Elasticsearch directory.
 ```
-# in the terminal of your choice 
-#The name of your unzipped elasticsearch folder may differ from what is shown below. 
+# In the terminal
+#The name of your unzipped Elasticsearch may differ from what is shown below. Make sure you cd into the right Elasticsearch directory. 
 cd elasticsearch-7.10.0
 ```
 You will see that you are now in the elasticsearch directory(orange box).
 ![CD into elasticsearch](https://user-images.githubusercontent.com/60980933/99982686-1e1d0880-2d68-11eb-908c-284f4c9e9eb5.jpg)
 
+In the terminal, run the following command. 
+```javascript
+#In the terminal
+bin/elasticsearch
+```
+You will see the cursor blinking for a while before you see Elasticsearch server running!
+![Run ES](https://user-images.githubusercontent.com/60980933/99984221-05aded80-2d6a-11eb-8a92-212413abf8d8.jpg)
+
+If you scroll down, you will see that Elasticsearch server is running on localhost at port 9200(orange box). 
+![port 9200](https://user-images.githubusercontent.com/60980933/99984819-c633d100-2d6a-11eb-93d4-61dc0a2502b8.jpg)
+
+A REST API is used to send a request to Elasticsearch server and the request is sent to the endpoint http://localhost:9200.
+
+We will use cURL command line tool to check whether the request is received by Elasticsearch server.
+
+Open up a NEW terminal. 
+
+In the home directory of the new terminal, run the following command. 
+```javascript
+#In new terminal
+curl http://localhost:9200
+```
+![curl command](https://user-images.githubusercontent.com/60980933/99986285-37c04f00-2d6c-11eb-9c05-0e48f2604630.jpg)
+
+When you run the command(orange box), you will see the following JSON object displayed in your terminal(green box). That means everything is working correctly and Elasticsearch was successfully installed. 
+
+Leave these two terminals open to keep the Elasticsearch server running. 
 
 ### Kibana ###
 
