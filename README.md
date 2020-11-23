@@ -15,6 +15,8 @@ The directions for macOS/Linux and Windows are slightly different. Directions fo
 - [macOS and Linux](#for-macOS-and-linux)
 - [Windows](#for-windows)
 
+If you want more in depth overview of Elasticsearch and Kibana, checkout my blog on [Beginner's guide to Elasticsearch](https://dev.to/lisahjung/beginner-s-guide-to-elasticsearch-4j2k). 
+
 ## For macOS and Linux
 
 ### Elasticsearch ###
