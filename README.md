@@ -8,7 +8,7 @@ The following links will take you to the download pages for Elasticsearch and Ki
 * [Elasticsearch](https://www.elastic.co/downloads/elasticsearch)
 * [Kibana](https://www.elastic.co/downloads/kibana?S_TACT=)
 
-The directions for macOS/Linux and Windows are slightly different. Directions for both operatings systems are shown below. 
+The directions for macOS/Linux and Windows are slightly different. Directions for these operatings systems are shown below. 
 - [macOS and Linux](#for-macOS-and-linux)
 - [Windows](#for-windows)
 
@@ -24,15 +24,15 @@ Select the download option for your operating system(green box).
 
 **Step 2: Relocate the downloaded Elasticsearch and extract it**
 
-Where you relocate Elasticsearch is up to you but for this tutorial, I have moved it to the desktop. 
+Where you relocate Elasticsearch is up to you but for this tutorial, I am moving it to the desktop. 
 
-Once Elasticsearch is downloaded(orange box), control-click on Elasticsearch and click on show in folder. 
+Once Elasticsearch is downloaded(orange box), control-click on `Elasticsearch` and click on `show in folder`. 
 ![Relocate the file](https://user-images.githubusercontent.com/60980933/99977274-a8ae3980-2d61-11eb-91c7-4210ef2b9acb.jpg)
 
 Select the downloaded Elasticsearch(orange box) and move it to the desktop(green box). 
 ![Move to download](https://user-images.githubusercontent.com/60980933/99977759-4bff4e80-2d62-11eb-99ee-f65037032cbf.jpg)
 
-Go to the desktop and unzip Elasticsearch by double clicking on it(orange box). Once Elasticsearch is unzipped, you will see a blue folder name Elasticsearch on your desktop. 
+Go to the desktop and unzip Elasticsearch by double clicking on it(orange box). Once Elasticsearch is unzipped, you will see a blue folder named Elasticsearch on your desktop. 
 ![Unzip the file](https://user-images.githubusercontent.com/60980933/99979472-5d495a80-2d64-11eb-8e2d-0af00252e7f3.jpg)
 
 **Step 3: Start the Elasticsearch server and ensure that everything is working properly**
@@ -54,7 +54,9 @@ ls
 Change into the unzipped Elasticsearch directory.
 ```
 # In the terminal
-# A new version of Elasticsearch may have been released by the time you download Elasticsearch. Therefore, the version of your download may differ from what is shown below(7.10.0). Please make sure you cd into the Elasticsearch directory shown when using the ls command from the previous step.  
+# A new version of Elasticsearch may have been released by the time you download Elasticsearch. 
+#Therefore, the version of your download may differ from what is shown below(7.10.0). 
+#Please make sure you cd into the Elasticsearch directory shown when using the ls command from the previous step.  
 
 cd elasticsearch-7.10.0
 ```
@@ -66,15 +68,12 @@ In the terminal, run the following command.
 # In the terminal
 bin/elasticsearch
 ```
-You will see the cursor blinking for a while before you see Elasticsearch server running!
+You will see the cursor blinking for a while before Elasticsearch server starts running!
 ![Run ES](https://user-images.githubusercontent.com/60980933/99984221-05aded80-2d6a-11eb-8a92-212413abf8d8.jpg)
 
-If you scroll down, you will see that Elasticsearch server is running on localhost at port 9200(orange box). 
-![port 9200](https://user-images.githubusercontent.com/60980933/99984819-c633d100-2d6a-11eb-93d4-61dc0a2502b8.jpg)
+**Step 4: Send a cURL command to the Elasticsearch server to make sure that Elasticsearch is up and running**
 
-**Step 4: Send a cURL command to Elasticsearch server to make sure that Elasticsearch is up and running**
-
-A REST API is used to send a request to the Elasticsearch server. The request is sent to the endpoint http://localhost:9200.
+A REST API is used to send requests to the Elasticsearch server. These requests are sent to the endpoint http://localhost:9200.
 
 We will use cURL command line tool to check whether the request is received by Elasticsearch server.
 
@@ -87,7 +86,7 @@ curl http://localhost:9200
 ```
 ![curl command](https://user-images.githubusercontent.com/60980933/99986285-37c04f00-2d6c-11eb-9c05-0e48f2604630.jpg)
 
-When you run the command(orange box), you will see the following JSON object displayed in your terminal(green box). That means everything is working correctly and Elasticsearch was successfully installed. 
+When you run the command(orange box), you will see the following JSON object displayed in your terminal(green box). That means everything is working correctly and Elasticsearch has been successfully installed. 
 
 Leave these two terminals open to keep the Elasticsearch server running. 
 
@@ -96,7 +95,7 @@ Downloading Kibana is very similar to downloading Elasticsearch.
 
 **Step 1: Download Kibana**
 
-Kibana is a web interface for Elasticsearch and it ships with its backend server that communicates with Elasticsearch. 
+Kibana is a web interface for Elasticsearch. Kibana ships with its backend server that communicates with Elasticsearch. 
 
 Go to the [Kibana](https://www.elastic.co/downloads/elasticsearch) download link.
 
@@ -108,15 +107,16 @@ You will see that a zip file has been downloaded.
 
 **Step 2: Relocate the downloaded file and extract the file**
 
-Where you relocate Kibana is up to you but for this tutorial, I have moved it to the desktop. 
+Where you relocate Kibana is up to you but for this tutorial, I am moving it to the desktop. 
 
-Once Kibana is downloaded(orange box), control-click on Kibana and click on show in folder. 
+Once Kibana is downloaded(orange box), control-click on `Kibana` and click on `show in folder`. 
 ![download Kibana](https://user-images.githubusercontent.com/60980933/99998021-4104e800-2d7b-11eb-8bfc-64f0d92299be.jpg)
 
 Select the downloaded Kibana(orange box) and move it to the desktop(green box). 
 ![relocate kibana](https://user-images.githubusercontent.com/60980933/99998292-b07ad780-2d7b-11eb-8136-ba70ae8e22c7.jpg)
 
 Go to the desktop and unzip Kibana by double clicking on it(orange box). Once Kibana is unzipped, you will see a blue folder named Kibana on your desktop. 
+
 ![unzip kibana](https://user-images.githubusercontent.com/60980933/99998479-fafc5400-2d7b-11eb-8004-48d9c7caa431.jpg)
 
 **Step 3: Run Kibana and ensure that everything is working properly**
@@ -138,7 +138,9 @@ ls
 Change into the unzipped Kibana directory.
 ```
 # In the terminal
-# By the time you download Kibana, a new version of Kibana may have been released. Therefore, the version of your download may differ from what is shown below(7.10.0-darwin-x86_64). Please make sure you cd into the Kibana directory shown when using the ls command from the previous step.  
+# By the time you download Kibana, a new version of Kibana may have been released. 
+# Therefore, the version of your download may differ from what is shown below(7.10.0-darwin-x86_64). 
+# Please make sure you cd into the Kibana directory shown when using the ls command from the previous step.  
 cd kibana-7.10.0-darwin-x86_64
 ```
 You will see that you are now in the Kibana directory(orange box).
@@ -162,11 +164,11 @@ You will see the following displayed on the browser.
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/hhutzyk8cxzvk3qi71ta.png)
 
-**Troubleshooting**
+**If Kibana does not load on your browser**
 ```
-If you are having trouble getting Kibana to work, try restarting your Elasticsearch server. Go to the command prompt terminal used for your Elasticserach server. Press `control + c`. Then, run elasticsearch.bat in the same terminal. 
+If you are having trouble getting Kibana to load, try restarting your Elasticsearch server. Go to the terminal used for your Elasticserach server. Press `control + c`. Then, run bin/elasticsearch in the same terminal. 
 
-Go back to your command prompt terminal for Kibana. Run `control + c` in the command prompt terminal. Then, run kibana.bat in the terminal. Go to http://localhost:5601 on your browser. 
+Go back to your terminal that is running Kibana. Run `control + c` in the command prompt terminal. Then, run bin/kibana in the terminal. Go to http://localhost:5601 on your browser. 
 ```
 All right let's get back to the Kibana browser.
 
@@ -178,7 +180,7 @@ You will see the following interface here where you can send search queries to E
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/p61s5ya2d537hi8fx3w0.png)
 
-That is it. You have successfully downloaded and ran Elasticsearch and Kibana on you macOS/Linux!
+Congrats. You have successfully downloaded and ran Elasticsearch and Kibana on your macOS/Linux!
 
 ## For Windows 
 ### Elasticsearch ###
@@ -192,17 +194,15 @@ In the region highlighted with a green box, select the download option for your 
 
 You will see that a zip file has been downloaded(orange box). 
 
-If you scroll down the page, you will see the installation steps. We will be using the commands specified in these steps to test whether Elasticsearch server is running smoothly. 
-
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/4gv3340zhsuvwwqr87th.png)
-
 **Step 2: Relocate the downloaded file and extract the file**
+
 Where you relocate this file is up to you but for this tutorial, I have created a folder called Elastic_Stack in my Windows(C:) drive. 
 
 Move the downloaded file to Elastic_Stack folder.
+
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/19go5m3dcxv2wj9p0gnb.png)
 
-Right click on the file to display pop up options and click on `extract all` option. Once the file has been extracted, double click on the file.  You will see the following displayed on your screen
+Right click on the file to display pop up options and click on `extract all` option. Once the file has been extracted, double click on the file.  You will see the following displayed on your screen.
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/svkdjodtmu95w1tpk9ti.png)
 
@@ -225,7 +225,7 @@ Search for the Command Prompt App on windows(purple box) and click on `run as ad
 In the Command Prompt App terminal, change into the bin directory(cd) by providing the file path to the bin folder. This is the file path you have copied in the previous step.
 
 ```javascript
-#In command prompt terminal
+#In the command prompt terminal
 cd filepath to bin folder in Elasticsearch
 ```
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/rwbvh8g8g6iemh1u7f7z.png)
@@ -234,10 +234,10 @@ Red box highlights the command we have used to change to the bin directory.
 
 When you press enter, you will see that you have changed into the bin directory(blue box). 
 
-In the terminal, run the following command. If you are running on a non-window OS, then run `elasticsearch` in the terminal instead. 
+In the terminal, run the following command.
 
 ```javascript
-#In command prompt terminal
+# In the command prompt terminal
 elasticsearch.bat
 ```
 You will see the cursor blinking for a while before you see Elasticsearch server running!
@@ -246,7 +246,7 @@ You will see the cursor blinking for a while before you see Elasticsearch server
 
 You will see that Elasticsearch server is running on localhost at port 9200(red box). 
 
-Let's recap real quick. When a user(client) sends a request to the server, the server sends a search query to the Elasticsearch server. A REST API is used to query the documents and this query is sent to the endpoint http://localhost:9200.
+A REST API is used to send a request to the Elasticsearch server. The request is sent to the endpoint http://localhost:9200.
 
 We will use cURL command line tool to check whether the request is received by Elasticsearch server.
 
@@ -261,7 +261,7 @@ curl http://localhost:9200
 ```
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/fqrl0f2pwhcvoegbc9vp.png)
 
-When you run the command(white box), you will see the following JSON object displayed in your terminal(blue box). That means everything is working correctly and Elasticsearch was successfully installed. 
+When you run the command(white box), you will see the following JSON object displayed in your terminal(blue box). That means everything is working correctly and Elasticsearch has been successfully installed. 
 
 Leave these terminals open to keep the Elasticsearch server running. 
 
@@ -270,7 +270,7 @@ Installing Kibana is very similar to installing Elasticsearch.
 
 **Step 1: Download Kibana**
 
-Kibana is a web interface for Elasticsearch. However, it ships with its backend server that communicates with Elasticsearch. 
+Kibana is a web interface for Elasticsearch. Kibana ships with its backend server that communicates with Elasticsearch. 
 
 Go to the download [link](https://www.elastic.co/downloads/kibana).
 
@@ -280,11 +280,10 @@ In the region highlighted with a red box, select the download option for your op
 
 You will see that a zip file has been downloaded. 
 
-If you scroll down the page, you will see the installation steps. We will be using the commands specified in these steps to test whether Kibana server is running correctly. 
-
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/9odyrlqqs6rq4vbfoqfe.png)
-
 **Step 2: Relocate the downloaded file and extract the file**
+
+Where you relocate this file is up to you but for this tutorial, I have created a folder called Elastic_Stack in my Windows(C:) drive.
+
 Move the downloaded file to Elastic_Stack folder.
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/br6j8sbsclqk0az1gp6a.png)
 
@@ -307,7 +306,7 @@ Open up a new command prompt window.
 In the Command Prompt App terminal, change into the bin directory(cd) of Kibana by providing the file path to the bin folder. This is the path you have copied from the bin folder in the previous step.
 
 ```javascript
-#In command prompt terminal
+#In the command prompt terminal
 cd filepath to bin folder in Kibana 
 ```
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/kimv9jgt3toyx31iwolz.png)
@@ -316,10 +315,10 @@ The command has been highlighted with a red box.
 
 When you press enter,you will see that you have changed into the bin directory(blue box). 
 
-In the terminal, run the following command. If you are running on a non-window OS, then run `kibana` in the terminal instead. 
+In the terminal, run the following command. 
 
 ```javascript
-#In command prompt terminal
+#In the command prompt terminal
 kibana.bat
 ```
 You will see the cursor blinking for a while before you see Kibana running!
