@@ -321,7 +321,8 @@ In the terminal, run the following command.
 #In the command prompt terminal
 kibana.bat
 ```
-You will see the cursor blinking for a while before you see Kibana running!
+You will see the cursor blinking for a while before you see Kibana running! 
+When you see the message `http serverrunning at http://localhost:5601` in your terminal, you are ready to work with the Kibana interface. 
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/haaym56lxc2iyp6nhvgg.png)
 
@@ -331,11 +332,11 @@ You will see the following displayed on the browser.
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/hhutzyk8cxzvk3qi71ta.png)
 
-**Troubleshooting**
+**If Kibana does not load on your browser**
 ```
-If you are having trouble getting Kibana to work, try restarting your Elasticsearch server. Go to the command prompt terminal used for your Elasticserach server. Press `control + c`. Then, run elasticsearch.bat in the same terminal. 
+If you are having trouble getting Kibana to load, try restarting your Elasticsearch server. Go to the terminal used for your Elasticserach server. Press `control + c`. Then, run elasticsearch.bat in the same terminal. 
 
-Go back to your command prompt terminal for Kibana. Run `control + c` in the command prompt terminal. Then, run kibana.bat in the terminal. Go to http://localhost:5601 on your browser. 
+Go back to your terminal that is running Kibana. Run `control + c` in the command prompt terminal. Then, run kibana.bat in the terminal. Go to http://localhost:5601 on your browser. 
 ```
 All right let's get back to the Kibana browser.
 
@@ -343,6 +344,8 @@ All right let's get back to the Kibana browser.
 
 Click on the `menu` option(red box) to display a drop down menu. Scroll down to management section and click on `Dev Tools` option(green box). 
 
-This tool allows us to easily send queries to Elasticsearch.  
+You will see the following interface here where you can send search queries to Elasticsearch!
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/p61s5ya2d537hi8fx3w0.png)
+
+Congrats. You have successfully downloaded and ran Elasticsearch and Kibana on Windows!
