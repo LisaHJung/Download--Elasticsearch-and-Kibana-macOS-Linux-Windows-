@@ -1,6 +1,11 @@
 # Downloading Elasticsearch and Kibana(macOS/Linux and Windows)
 
-Elasticsearch and Kibana are **free and open**! 
+Elasticsearch and Kibana are part of the Elastic Stack. 
+Elastic Stack consists of Beats, Logstash, Elasticsearch, and Kibana. 
+
+Together, the Elastic Stack allows you to take data from any source, in any format, then search, analyze, and visualize it in real time. 
+
+Elastic Stack is **free and open**! 
 
 This repo will walk you through how you can download and run Elasticsearch and Kibana locally on Linux, macOS, or Windows. 
 
